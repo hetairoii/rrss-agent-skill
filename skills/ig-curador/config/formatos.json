@@ -1,0 +1,100 @@
+{
+  "plataforma": "instagram",
+  "verificado": "2026-10",
+  "nota": "Las cifras de plataforma caducan. Si algo aquí contradice lo que Instagram hace hoy, Instagram tiene razón: corrige este archivo. 4:5 es la apuesta segura en el feed; Instagram acepta también 3:4 y la cuadrícula del perfil muestra miniaturas verticales, así que lo importante de una portada debe ir en el centro.",
+  "formatos": {
+    "post": {
+      "nombre": "Publicación de una sola imagen",
+      "cuando": "Hay UNA imagen que se entiende sola y es claramente superior al resto. Anuncios simples, un producto, un retrato, una frase.",
+      "acepta": ["foto"],
+      "proporciones": ["4:5", "1:1", "3:4"],
+      "medidas": {"4:5": [1080, 1350], "1:1": [1080, 1080], "3:4": [1080, 1440]},
+      "cantidad": {"min": 1, "max": 1, "defecto": 1},
+      "alternativas": 3,
+      "peso_tecnica": 0.25,
+      "penalizacion_recorte": 25,
+      "pesos": {
+        "impacto": 3.0, "sujeto": 2.5, "relevancia": 2.5, "emocion": 2.0,
+        "composicion": 2.0, "marca": 1.5, "autenticidad": 1.0,
+        "espacio_texto": 0.5, "narrativa": 0.3
+      },
+      "senales": ["me gusta por alcance", "guardados", "envíos"],
+      "zona_segura": "Deja el titular lejos de los bordes; en la cuadrícula del perfil se recortan los laterales."
+    },
+    "carrusel": {
+      "nombre": "Carrusel (deslizable)",
+      "cuando": "Hay una historia con pasos, un antes y después, un proceso, varias caras de un mismo evento, o varias fotos fuertes que juntas dicen más. Es el formato de feed con más tiempo de permanencia: cada deslizamiento es una interacción, e Instagram puede volver a mostrarlo desde la segunda diapositiva.",
+      "acepta": ["foto", "video"],
+      "proporciones": ["4:5", "1:1", "3:4"],
+      "medidas": {"4:5": [1080, 1350], "1:1": [1080, 1080], "3:4": [1080, 1440]},
+      "misma_proporcion": true,
+      "cantidad": {"min": 2, "max": 20, "defecto": 7, "recomendado": [5, 10]},
+      "video_max_seg": 60,
+      "peso_tecnica": 0.2,
+      "penalizacion_recorte": 25,
+      "diversidad": 0.40,
+      "piso_relativo": 0.7,
+      "pesos": {
+        "relevancia": 2.5, "narrativa": 2.5, "sujeto": 2.0, "impacto": 1.5,
+        "emocion": 1.5, "composicion": 1.5, "marca": 1.5, "autenticidad": 1.0,
+        "espacio_texto": 0.7
+      },
+      "pesos_portada": {
+        "impacto": 4.0, "sujeto": 2.0, "emocion": 1.5, "espacio_texto": 1.5,
+        "composicion": 1.0, "relevancia": 1.5
+      },
+      "orden_roles": ["portada", "contexto", "persona", "proceso", "detalle", "producto", "resultado", "cierre"],
+      "senales": ["tiempo de permanencia", "guardados", "envíos"],
+      "zona_segura": "Portada: texto lejos de los 120 px exteriores. La 2.ª diapositiva es una segunda portada: no la gastes en relleno."
+    },
+    "reel": {
+      "nombre": "Reel",
+      "cuando": "Hay video con movimiento real, una persona hablando o algo que hay que VER pasar. Es el formato que más llega a gente que no te sigue. No se gana con fotos fijas en fila: si solo hay fotos, casi siempre rinde más un carrusel.",
+      "acepta": ["video", "foto"],
+      "proporciones": ["9:16"],
+      "medidas": {"9:16": [1080, 1920]},
+      "duracion": {"min": 5, "max": 180, "recomendada": [15, 45], "defecto": 20},
+      "segundos_por_foto": 2.0,
+      "tramo_max_seg": 6.0,
+      "peso_tecnica": 0.15,
+      "penalizacion_recorte": 20,
+      "permite_relleno": true,
+      "relleno_si_perdida": 0.45,
+      "penalizacion_relleno": 10,
+      "pesos": {
+        "gancho": 3.0, "ritmo": 2.0, "impacto": 2.0, "relevancia": 2.0,
+        "emocion": 2.0, "autenticidad": 1.5, "audio": 1.0, "sujeto": 1.0,
+        "narrativa": 1.0, "marca": 1.0, "composicion": 0.5
+      },
+      "pesos_portada": {
+        "impacto": 3.0, "sujeto": 2.0, "espacio_texto": 2.0, "emocion": 1.5, "relevancia": 1.5
+      },
+      "senales": ["tiempo de visualización / retención a 3 s", "envíos por alcance", "repeticiones"],
+      "zona_segura": "En 1080x1920: nada importante por encima de y=230 ni por debajo de y=1440, y deja libres los 230 px de la derecha (botones). La portada se ve recortada en la cuadrícula del perfil: el sujeto al centro."
+    },
+    "story": {
+      "nombre": "Historias (secuencia)",
+      "cuando": "Contenido del día, detrás de cámaras, algo informal o una pregunta para tus seguidores. No llega a desconocidos: su trabajo es la cercanía y las respuestas por mensaje directo.",
+      "acepta": ["foto", "video"],
+      "proporciones": ["9:16"],
+      "medidas": {"9:16": [1080, 1920]},
+      "cantidad": {"min": 1, "max": 10, "defecto": 5, "recomendado": [3, 7]},
+      "video_max_seg": 60,
+      "peso_tecnica": 0.1,
+      "penalizacion_recorte": 25,
+      "permite_relleno": true,
+      "relleno_si_perdida": 0.35,
+      "penalizacion_relleno": 6,
+      "diversidad": 0.30,
+      "piso_relativo": 0.5,
+      "pesos": {
+        "autenticidad": 3.0, "relevancia": 2.0, "emocion": 2.0, "espacio_texto": 2.0,
+        "sujeto": 1.5, "narrativa": 1.5, "impacto": 1.0, "marca": 1.0, "composicion": 0.5,
+        "gancho": 1.0
+      },
+      "posicion_pregunta": 4,
+      "senales": ["respuestas y reacciones", "toques de sticker", "mensajes directos"],
+      "zona_segura": "En 1080x1920: nada por encima de y=250 (fila del perfil) ni por debajo de y=1600 (barra de respuesta)."
+    }
+  }
+}

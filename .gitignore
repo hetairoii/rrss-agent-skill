@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+rrss-trabajo/
+.DS_Store

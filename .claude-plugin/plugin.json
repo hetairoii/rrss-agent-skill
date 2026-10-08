@@ -1,0 +1,10 @@
+{
+  "name": "rrss-agent",
+  "description": "Gestor de redes sociales para Claude, empezando por Instagram. /ig-curador elige qué fotos y videos publicar según el objetivo de la publicación: inventario técnico, evaluación visual con rúbrica, selección y orden por formato (post, carrusel, reel, historias), portada, recorte a medida y aprendizaje con tus propios resultados.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Matias"
+  },
+  "license": "MIT",
+  "keywords": ["instagram", "redes sociales", "fotos", "seleccion", "carrusel", "reels", "stories", "engagement"]
+}

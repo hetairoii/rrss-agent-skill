@@ -1,0 +1,114 @@
+{
+  "version": "1.0",
+  "escala": "0 a 10. Puntúa con honestidad: un 7 es una buena foto, un 9 es la mejor del día, un 10 casi nunca. Si todo sale 8, la rúbrica no está separando nada y el ranking es ruido.",
+  "como_puntuar": "Puntúa cada activo comparándolo con el resto del lote, no contra un ideal abstracto. La pregunta siempre es: para ESTE brief y ESTE formato, ¿cuánto aporta esta pieza?",
+  "dimensiones": {
+    "impacto": {
+      "pregunta": "¿Frena el dedo en el feed? Lo que se entiende y engancha en menos de un segundo a tamaño miniatura.",
+      "2": "Se pierde entre cualquier feed. Nada destaca a tamaño teléfono.",
+      "5": "Correcta, agradable, pero no detiene a nadie que no te conoce.",
+      "8": "Contraste, color, gesto o situación que se lee al instante y genera curiosidad.",
+      "10": "Imposible de pasar de largo. Raro."
+    },
+    "sujeto": {
+      "pregunta": "¿Está claro qué es lo importante? Un sujeto, enfocado, separado del fondo.",
+      "2": "No se sabe qué mirar. Sujeto pequeño, tapado o fuera de foco.",
+      "5": "Se entiende con un segundo vistazo.",
+      "8": "El ojo va directo al sujeto y no hay distracciones.",
+      "10": "Lectura inmediata incluso a 1/6 del tamaño real."
+    },
+    "emocion": {
+      "pregunta": "¿Hay un momento humano? Caras, miradas, gestos, risa, tensión, sorpresa. Las caras con expresión casi siempre ganan a los objetos.",
+      "2": "Neutra o fría. Personas posando sin expresión, ojos cerrados.",
+      "5": "Algo de expresión, pero genérica.",
+      "8": "Una emoción clara que el espectador siente o reconoce.",
+      "10": "El tipo de momento que la gente comparte con alguien."
+    },
+    "composicion": {
+      "pregunta": "Encuadre, horizonte recto, líneas, aire alrededor del sujeto, nada cortado donde no debe (pies, cabezas, manos).",
+      "2": "Torcida, cortada mal o con elementos que estorban en los bordes.",
+      "5": "Correcta sin más.",
+      "8": "Intencional y limpia. Aguanta el recorte al formato destino.",
+      "10": "Composición de portada."
+    },
+    "relevancia": {
+      "pregunta": "¿Cuenta lo que el brief quiere contar? Esta es la dimensión que conecta la foto con el contexto de la publicación.",
+      "2": "Bonita pero de otro tema. Distrae del mensaje.",
+      "5": "Relacionada de forma indirecta.",
+      "8": "Muestra justo lo que el mensaje necesita.",
+      "10": "Es el mensaje, sin necesidad de texto."
+    },
+    "narrativa": {
+      "pregunta": "¿Aporta información nueva a la secuencia? Contexto, proceso, detalle, resultado. Clave para carrusel, story y reel.",
+      "2": "Repite lo que ya cuenta otra pieza mejor.",
+      "5": "Añade algo, pero prescindible.",
+      "8": "Un paso de la historia que falta si se quita.",
+      "10": "Sin ella la secuencia no se entiende."
+    },
+    "marca": {
+      "pregunta": "¿Encaja con la estética y valores de la cuenta (marca.md)? Paleta, estilo, lo que la cuenta nunca mostraría.",
+      "2": "Choca con la identidad de la cuenta.",
+      "5": "Neutra.",
+      "8": "Reconocible como de esta cuenta.",
+      "10": "Define la estética de la cuenta."
+    },
+    "autenticidad": {
+      "pregunta": "¿Se siente real y propio, no de banco de imágenes ni excesivamente producido? Instagram premia el contenido original y la audiencia lo detecta.",
+      "2": "Parece stock, repost o publicidad genérica.",
+      "5": "Producido pero creíble.",
+      "8": "Momento genuino, propio, con personalidad.",
+      "10": "Solo esta cuenta pudo haberlo publicado."
+    },
+    "espacio_texto": {
+      "pregunta": "¿Hay una zona limpia (cielo, pared, fondo liso) donde poner texto o un sticker sin tapar al sujeto, DENTRO de la zona segura del formato?",
+      "2": "Llena de detalle de borde a borde.",
+      "5": "Hay espacio pero justo, o fuera de la zona segura.",
+      "8": "Zona amplia y limpia donde cabe un titular.",
+      "10": "Pensada para llevar texto."
+    },
+    "gancho": {
+      "solo": ["video"],
+      "pregunta": "Los primeros 2 segundos: ¿hay movimiento, una cara, algo que pasa YA? En reels esto decide la retención y la retención decide el alcance.",
+      "2": "Arranca con plano estático, negro, logo o alguien preparándose.",
+      "5": "Arranca con algo, pero tarda en pasar.",
+      "8": "En el primer segundo ya ocurre algo concreto.",
+      "10": "Imposible no ver el segundo 3."
+    },
+    "ritmo": {
+      "solo": ["video"],
+      "pregunta": "¿Mantiene el interés? Cambios de plano, acción, nada de tramos muertos de más de 3-4 segundos.",
+      "2": "Plano fijo largo sin cambios.",
+      "5": "Algunos tramos muertos que habría que cortar.",
+      "8": "Fluye; cada tramo aporta.",
+      "10": "Sin un segundo de sobra."
+    },
+    "audio": {
+      "solo": ["video"],
+      "pregunta": "¿El audio original suma? Voz clara, sonido ambiente con carácter. Si el audio es malo puntúa bajo: se puede reemplazar por música, pero hay que saberlo.",
+      "2": "Viento, ruido, voz ininteligible.",
+      "5": "Usable, sin aportar.",
+      "8": "Voz clara o sonido que forma parte de la experiencia.",
+      "10": "El audio es la mitad del contenido."
+    }
+  },
+  "roles": {
+    "portada": "Puede abrir la publicación: lo mejor para frenar el feed.",
+    "contexto": "Dónde y cuándo: plano general, lugar, ambiente.",
+    "proceso": "Cómo se hizo: manos, pasos, detrás de cámaras.",
+    "detalle": "Primer plano: textura, producto, algo que solo se ve de cerca.",
+    "persona": "Gente: equipo, cliente, protagonista.",
+    "producto": "El producto o servicio, claro y reconocible.",
+    "resultado": "El después, el logro, el antes/después.",
+    "cierre": "Funciona como última pieza: invita a actuar o cierra la historia.",
+    "pregunta": "Deja espacio para un sticker o pregunta (stories)."
+  },
+  "descartes_duros": [
+    "Ojos cerrados, parpadeo o boca a medio hablar en la cara principal.",
+    "El sujeto principal desenfocado (el fondo desenfocado a propósito no cuenta).",
+    "Marca de agua o logo de otra plataforma (TikTok, CapCut...). Instagram reduce la distribución de contenido reciclado con marca de otra app.",
+    "Personas reconocibles que el brief o marca.md dicen que no deben aparecer, o menores identificables sin indicación de que hay permiso.",
+    "Información sensible visible: pantallas con datos, documentos, matrículas, direcciones.",
+    "Contenido que no es de la cuenta (fotos de terceros, capturas de otras publicaciones) salvo que el brief diga que hay permiso.",
+    "Algo que contradice el mensaje o a la marca (producto de la competencia, error visible, desorden que no es intencional)."
+  ]
+}

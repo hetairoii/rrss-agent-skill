@@ -1,0 +1,16 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "rrss-agent-skill",
+  "description": "Gestor de redes sociales para Claude: selección de contenido para Instagram",
+  "owner": {
+    "name": "Matias"
+  },
+  "plugins": [
+    {
+      "name": "rrss-agent",
+      "description": "Elige el mejor contenido (fotos y videos) para cada publicación de Instagram según su objetivo y formato, lo ordena, lo recorta a medida y aprende de tus resultados.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}
